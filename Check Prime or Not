@@ -1,0 +1,31 @@
+namespace ConsoleApp10
+{
+    internal class Class1
+    {
+        static void Main()
+        {
+            int i, n, count = 0;
+
+            Console.Write("Enter a Number: ");
+            n = int.Parse(Console.ReadLine());
+            
+            for(i = 1; i <= n; i++)
+            {
+                if(n % i == 0)
+                {
+                    count++;
+                }
+            }
+
+            if(count == 2)
+            {
+                Console.WriteLine("Enter Number is Prime");
+            }
+            else
+            {
+                Console.WriteLine("Enter Number is Not Prime");
+            }
+        }
+
+    }
+}
